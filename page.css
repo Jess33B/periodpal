@@ -1,0 +1,216 @@
+
+body{
+    font-family: 'Wittgenstein';
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f2;
+    color:#333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d36b6b;
+    padding: 10px 20px;
+    color:white;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: flex-start;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f8d7da;
+}
+.hero-text{
+    max-width: 500px;
+}
+.hero-text h1{
+    font-size: 36px;
+}
+.hero-text button{
+    background-color: #d36b6b;
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+}
+.features{
+    text-align: center;bottom: 6px;
+    padding: 50px;
+}
+.feature-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.feature-item img {
+    width: 4Opx;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+}
+.content-box.reverse {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 15px; /* Adds spacing between text and image */
+    max-width: 800px;
+}
+.cycle-title{
+    font-family:' Wittgenstein';
+    font-weight: bold;
+
+}
+p{
+    font-family:'Lexend';
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.small-image{
+    width: 350px;
+    height: auto;
+}
+.style{
+    font-family:'Lexend'
+}
+.light{
+    background-color: #d36b6b;
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+}
+.dark{
+    background-color: #d36b6b;
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+}
+.new{
+    font-family: sans-serif;
+}
+.navbar{
+    background:#D3706C;font-family:'Wittgenstein';padding-right: 15px;padding-left: 15px;
+  
+}
+.navdiv{
+    display: flex;
+     align-items: center;
+     justify-content:space-between;
+}
+.join{
+
+    background-color: #000000;
+    color:#d36b6b;
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+}
+.new{
+    font-family: 'Lexend',sans-serif;
+    font-style: normal;
+}
+.datef{
+    background-color: #d36b6b;
+    color:white;
+    padding: 10px 20px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    gap:10px;
+    padding: 15px 20px;
+}
+.dur {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D3706C;
+    padding: 20px;
+    gap: 5px;
+    text-align: center;
+    padding: auto;
+}
+
+
+.dur label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.started,.ended,.dur{
+    flex:1;
+}
+.mood-selector{
+    color: #d75252;
+    background-color:#f4eeed;
+}
+.mood-btn{
+    border:#D3706C;
+}
+.flow-selector{
+    color: #d75252;
+    background-color:#f4eeed;
+}
+.typ-flow{
+    border:#D3706C;
+}
+.exercise{
+    color: #d75252;
+    background-color:#f4eeed;
+
+}
+.exe{
+    border:#D3706C;
+}
+.predictions{
+    align-items: center;
+    color: #d75252;
+    background-color:#f4eeed;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-image{
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
