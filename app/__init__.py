@@ -1,23 +1,18 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_login import LoginManager
-
-db = SQLAlchemy()
-migrate = Migrate()
-login_manager = LoginManager()
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('config')
+    
+    # Load configuration
+    app.config.from_object('config.Config')
 
-    db.init_app(app)
-    migrate.init_app(app, db)
-    login_manager.init_app(app)
-    login_manager.login_view = 'auth.login'
+    # Register blueprints
+    from .auth import auth as auth_blueprint
+    from .main import main as main_blueprint
+    from .tracker import tracker as tracker_blueprint
 
-    from app.routes import auth, main
-    app.register_blueprint(auth.auth, url_prefix='/auth')
-    app.register_blueprint(main.main)
+    app.register_blueprint(auth_blueprint)
+    app.register_blueprint(main_blueprint)
+    app.register_blueprint(tracker_blueprint)
 
     return app
