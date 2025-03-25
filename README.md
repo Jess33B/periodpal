@@ -69,6 +69,3 @@ periodpal/
 
 Feel free to fork this project and make pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-This project is provided as-is. For other licensing details, please include a license that suits your needs.
