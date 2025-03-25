@@ -8,11 +8,9 @@ def create_app():
 
     # Register blueprints
     from .auth import auth as auth_blueprint
-    from .main import main as main_blueprint
-    from .tracker import tracker as tracker_blueprint
-
     app.register_blueprint(auth_blueprint)
+
+    from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
-    app.register_blueprint(tracker_blueprint)
 
     return app

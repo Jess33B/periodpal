@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Error</h1>
+    </header>
+    <main>
+        <h2>Oops! Something went wrong.</h2>
+        <p>We couldn't find the page you were looking for.</p>
+        <a class="button" href="{{ url_for('main.home') }}">Go to Home</a>
+    </main>
+    <footer>
+        <p>&copy; {{ current_year }} PeriodPal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
